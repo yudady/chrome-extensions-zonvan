@@ -36,5 +36,14 @@ chrome.tabs.getSelected(null, (tab) => {
             code: 'document.getElementById("name").value = "mycenter";document.getElementById("pwd").value = "Mycenter123";document.getElementById("code").value = "c";document.getElementById("AccountDoLoginBtn").click(); '
         });
 
-    })
+    });
+    $("#myCenterControlTest").on('click', function () {
+        chrome.tabs.executeScript(tabId, {
+            code: 'document.getElementById("name").value = "mycenter";document.getElementById("pwd").value = "Mycenter123";document.getElementById("AccountDoLoginBtn").click(); '
+        });
+
+    });
+	
+	
+	
 });
