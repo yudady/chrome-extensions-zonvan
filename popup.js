@@ -8,25 +8,29 @@ chrome.tabs.getSelected(null, (tab) => {
         "use strict";
         sendUserNamePassword({
             code: 'document.getElementById("name").value = "zonpay";document.getElementById("pwd").value = "0221mypay@zonvan";document.getElementById("code").value = "c";document.getElementById("AccountDoLoginBtn").click(); '
-        })
+        });
+        window.close();
     });
     document.getElementById('rd').addEventListener('click', () => {
         "use strict";
         sendUserNamePassword({
             code: 'document.getElementById("name").value = "mypay";document.getElementById("pwd").value = "mypay@zonvan";document.getElementById("AccountDoLoginBtn").click(); '
-        })
+        });
+        window.close();
     });
     document.getElementById('myPayTest').addEventListener('click', () => {
         "use strict";
         sendUserNamePassword({
             code: 'document.getElementById("name").value = "zonvan";document.getElementById("pwd").value = "Zonvan123";document.getElementById("code").value = "c";document.getElementById("AccountDoLoginBtn").click(); '
-        })
+        });
+        window.close();
     });
     document.getElementById('myPayCenterTest').addEventListener('click', () => {
         "use strict";
         sendUserNamePassword({
             code: 'document.getElementById("name").value = "zonvan";document.getElementById("pwd").value = "Zonvan123";document.getElementById("AccountDoLoginBtn").click(); '
-        })
+        });
+        window.close();
     });
 
 
@@ -35,15 +39,15 @@ chrome.tabs.getSelected(null, (tab) => {
         chrome.tabs.executeScript(tabId, {
             code: 'document.getElementById("name").value = "mycenter";document.getElementById("pwd").value = "Mycenter123";document.getElementById("code").value = "c";document.getElementById("AccountDoLoginBtn").click(); '
         });
-
+        window.close();
     });
     $("#myCenterControlTest").on('click', function () {
         chrome.tabs.executeScript(tabId, {
             code: 'document.getElementById("name").value = "mycenter";document.getElementById("pwd").value = "Mycenter123";document.getElementById("AccountDoLoginBtn").click(); '
         });
-
+        window.close();
     });
-	
-	
-	
+
+
+
 });
