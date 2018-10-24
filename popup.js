@@ -37,13 +37,13 @@ chrome.tabs.getSelected(null, (tab) => {
     // 使用jquery
     $("#myCenterTest").on('click', function () {
         chrome.tabs.executeScript(tabId, {
-            code: 'document.getElementById("name").value = "mycenter";document.getElementById("pwd").value = "Mycenter123";document.getElementById("code").value = "c";document.getElementById("AccountDoLoginBtn").click(); '
+            code: 'document.getElementById("name").value = "tommy";document.getElementById("pwd").value = "Tommy123";document.getElementById("code").value = "c";document.getElementById("AccountDoLoginBtn").click(); '
         });
         window.close();
     });
     $("#myCenterControlTest").on('click', function () {
         chrome.tabs.executeScript(tabId, {
-            code: 'document.getElementById("name").value = "mycenter";document.getElementById("pwd").value = "Mycenter123";document.getElementById("AccountDoLoginBtn").click(); '
+            code: 'document.getElementById("name").value = "tommy";document.getElementById("pwd").value = "Mycenter123";document.getElementById("AccountDoLoginBtn").click(); '
         });
         window.close();
     });
